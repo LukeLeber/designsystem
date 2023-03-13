@@ -5,3 +5,6 @@ packages/patternlab/vendor/*
 packages/*/node_modules/*
 .idea/*
 dependencyGraph.json
+.yarn/*
+!.yarn/releases/
+!.yarn/plugins/
