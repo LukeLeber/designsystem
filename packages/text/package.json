@@ -1,5 +1,9 @@
 {
   "name": "@lukeleber/text",
   "version": "1.0.0",
-  "description": "Provides text-based component styles"
+  "description": "Provides text-based component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
