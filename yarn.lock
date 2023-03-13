@@ -22,9 +22,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lukeleber/text@workspace:packages/text":
+"@lukeleber/llds-text@workspace:packages/text":
   version: 0.0.0-use.local
-  resolution: "@lukeleber/text@workspace:packages/text"
+  resolution: "@lukeleber/llds-text@workspace:packages/text"
   languageName: unknown
   linkType: soft
 
