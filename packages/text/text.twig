@@ -1,0 +1,5 @@
+{% set x = create_attribute({
+  class: ['text', 'text--test'],
+  test: 'Abc123',
+}) %}
+<span{{ x }}>{{ content }}</span>

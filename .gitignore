@@ -1,0 +1,7 @@
+node_modules/
+packages/*/dist/*
+packages/patternlab/public/*
+packages/patternlab/vendor/*
+packages/*/node_modules/*
+.idea/*
+dependencyGraph.json

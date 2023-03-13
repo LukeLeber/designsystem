@@ -1,0 +1,31 @@
+.text {
+  --text-weight-regular: 400;
+  --text-weight-semibold: 600;
+  --text-weight-bold: 700;
+  
+  --text-density-loose: 1.75;
+  --text-density-normal: 1.5;
+  --text-density-snug: 1.25;
+
+  --text-weight-default: var(--text-weight-regular);
+  --text-density-default: var(--text-density-normal);
+
+  font-weight: var(--text-weight-default);
+  line-height: var(--text-density-normal);
+}
+
+.text--weight-regular {
+  font-weight: var(--text-weight-regular);
+}
+
+.text--weight-semibold {
+  font-weight: var(--text-weight-semibold);
+}
+
+.text--weight-bold {
+  font-weight: var(--text-weight-bold);
+}
+
+.text--density-loose {
+  line-height: var(--text-density-loose);
+}

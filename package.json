@@ -1,0 +1,22 @@
+{
+  "name": "@lukeleber/designsystem",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "node-minify": "^3.0",
+    "sass": "^1.41.0",
+    "yarn": "^1.22.19"
+  },
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "default": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  }
+}
