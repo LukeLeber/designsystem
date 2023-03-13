@@ -1,5 +1,5 @@
 {
-  "name": "@lukeleber/text",
+  "name": "@lukeleber/llds-text",
   "version": "1.0.0",
   "description": "Provides text-based component styles",
   "publishConfig": {

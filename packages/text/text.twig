@@ -1,5 +1,8 @@
-{% set x = create_attribute({
-  class: ['text', 'text--test'],
-  test: 'Abc123',
-}) %}
+{% set attributes = attribtes | default(create_attribute()) %}
+
+{% set attributes = attributes.addClass([
+  'text',
+  weight in [] ? 'text--weight-' ~ weight,
+  density in [] ? 'text--density-' ~ density
+]) %}
 <span{{ x }}>{{ content }}</span>
