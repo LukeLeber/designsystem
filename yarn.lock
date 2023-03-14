@@ -1348,9 +1348,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lukeleber/llds-text@^1.0.0, @lukeleber/llds-text@workspace:packages/text":
+"@lukeleber/llds-text@^1.0.0, @lukeleber/llds-text@workspace:packages/llds-text":
   version: 0.0.0-use.local
-  resolution: "@lukeleber/llds-text@workspace:packages/text"
+  resolution: "@lukeleber/llds-text@workspace:packages/llds-text"
   languageName: unknown
   linkType: soft
 
