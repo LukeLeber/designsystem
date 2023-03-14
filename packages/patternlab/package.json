@@ -1,0 +1,23 @@
+{
+  "name": "@lukeleber/patternlab",
+  "version": "1.0.0",
+  "description": "",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "scripts": {
+    "build": "patternlab build --config ./patternlab-config.json",
+    "serve": "patternlab serve --config ./patternlab-config.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@lukeleber/llds-text": "^1.0.0",
+    "@pattern-lab/cli": "^6.0.1",
+    "@pattern-lab/core": "^6.0.1",
+    "@pattern-lab/engine-twig-php": "^6.0.1",
+    "@pattern-lab/uikit-workshop": "^6.0.3"
+  }
+}

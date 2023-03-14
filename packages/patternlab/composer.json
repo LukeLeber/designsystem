@@ -1,0 +1,20 @@
+{
+    "name": "llds/patternlab",
+    "type": "project",
+    "require": {
+        "drupal/core-utility": "^10.0",
+        "drupal/core-render": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "llds\\": "src/llds",
+            "Drupal\\Core\\": "src/Core"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luke Leber",
+            "email": "lukeleber@gmail.com"
+        }
+    ]
+}

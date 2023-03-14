@@ -1,0 +1,104 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "b8c0144417b050c049235eef887ad6d4",
+    "packages": [
+        {
+            "name": "drupal/core-render",
+            "version": "10.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-render.git",
+                "reference": "9da4521061c687a7b82ac2d23faf4e8c23a1fc3a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core-render/zipball/9da4521061c687a7b82ac2d23faf4e8c23a1fc3a",
+                "reference": "9da4521061c687a7b82ac2d23faf4e8c23a1fc3a",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/core-utility": "^10.0",
+                "php": ">=8.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "_readme": [
+                    "This file was partially generated automatically. See: https://www.drupal.org/node/3293830"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\Component\\Render\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Renders placeholder variables for HTML and plain-text display.",
+            "homepage": "https://www.drupal.org/project/drupal",
+            "keywords": [
+                "drupal"
+            ],
+            "support": {
+                "source": "https://github.com/drupal/core-render/tree/10.0.4"
+            },
+            "time": "2023-03-01T14:01:00+00:00"
+        },
+        {
+            "name": "drupal/core-utility",
+            "version": "10.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-utility.git",
+                "reference": "2c9c2c2d39b24bd3fabc9a15ffe7777ff4628f2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drupal/core-utility/zipball/2c9c2c2d39b24bd3fabc9a15ffe7777ff4628f2e",
+                "reference": "2c9c2c2d39b24bd3fabc9a15ffe7777ff4628f2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1.0"
+            },
+            "type": "library",
+            "extra": {
+                "_readme": [
+                    "This file was partially generated automatically. See: https://www.drupal.org/node/3293830"
+                ]
+            },
+            "autoload": {
+                "psr-4": {
+                    "Drupal\\Component\\Utility\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Mostly static utility classes for string, xss, array, image, and other commonly needed manipulations.",
+            "homepage": "https://www.drupal.org/project/drupal",
+            "keywords": [
+                "drupal"
+            ],
+            "support": {
+                "source": "https://github.com/drupal/core-utility/tree/10.0.4"
+            },
+            "time": "2023-02-16T09:02:52+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
