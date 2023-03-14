@@ -1348,6 +1348,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-paragraph@^1.0.0, @lukeleber/llds-paragraph@workspace:packages/llds-paragraph":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-paragraph@workspace:packages/llds-paragraph"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-text@^1.0.0, @lukeleber/llds-text@workspace:packages/llds-text":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-text@workspace:packages/llds-text"
@@ -1358,6 +1364,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@lukeleber/patternlab@workspace:packages/patternlab"
   dependencies:
+    "@lukeleber/llds-paragraph": ^1.0.0
     "@lukeleber/llds-text": ^1.0.0
     "@pattern-lab/cli": ^6.0.1
     "@pattern-lab/core": ^6.0.1

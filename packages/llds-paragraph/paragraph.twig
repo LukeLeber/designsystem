@@ -1,0 +1,7 @@
+{% set attributes = attribtes | default(create_attribute([])) %}
+
+{% set attributes = attributes.addClass([
+  'llds-paragraph',
+  density in ['loose', 'normal', 'tight'] ? 'llds-paragraph--density-' ~ density
+]) %}
+<p{{ attributes }}>{{ content }}</p>

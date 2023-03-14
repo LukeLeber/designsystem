@@ -1,0 +1,17 @@
+{% set paragraphs = [
+  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet facilisis magna etiam tempor orci eu. Aliquam nulla facilisi cras fermentum odio eu feugiat pretium. Tristique senectus et netus et. Velit sed ullamcorper morbi tincidunt ornare massa. Risus viverra adipiscing at in tellus. Porta non pulvinar neque laoreet suspendisse. Nulla facilisi morbi tempus iaculis urna. At ultrices mi tempus imperdiet nulla malesuada. Cras sed felis eget velit aliquet sagittis. Eget lorem dolor sed viverra ipsum nunc aliquet. Nullam vehicula ipsum a arcu cursus vitae congue mauris.',
+  'Massa tempor nec feugiat nisl pretium fusce. Euismod quis viverra nibh cras pulvinar. Tellus id interdum velit laoreet id. Mauris vitae ultricies leo integer malesuada nunc. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada. Augue lacus viverra vitae congue eu consequat ac. Sed viverra tellus in hac habitasse platea. Ac tortor dignissim convallis aenean et. Nibh praesent tristique magna sit amet purus. A arcu cursus vitae congue mauris rhoncus. Tellus id interdum velit laoreet id. Ultrices vitae auctor eu augue ut lectus arcu bibendum at.',
+  'Vitae congue eu consequat ac. Viverra suspendisse potenti nullam ac tortor. Nibh nisl condimentum id venenatis a condimentum vitae sapien pellentesque. Morbi leo urna molestie at elementum eu. Vitae ultricies leo integer malesuada. Vitae tempus quam pellentesque nec nam aliquam. Vestibulum sed arcu non odio euismod lacinia at quis risus. Aliquam ultrices sagittis orci a scelerisque. Posuere lorem ipsum dolor sit amet consectetur. Tellus mauris a diam maecenas sed. Porttitor lacus luctus accumsan tortor posuere ac ut consequat semper.',
+  'Ut eu sem integer vitae. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Et malesuada fames ac turpis. Enim nulla aliquet porttitor lacus luctus accumsan tortor. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Duis convallis convallis tellus id interdum velit laoreet id. Nullam vehicula ipsum a arcu cursus vitae. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Arcu bibendum at varius vel pharetra vel turpis nunc. Iaculis at erat pellentesque adipiscing commodo elit at imperdiet. Accumsan in nisl nisi scelerisque eu ultrices. Blandit massa enim nec dui nunc mattis enim.',
+  'Nunc sed id semper risus in hendrerit gravida rutrum quisque. Aliquet sagittis id consectetur purus ut. Id diam vel quam elementum. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Erat imperdiet sed euismod nisi porta. Bibendum est ultricies integer quis auctor elit sed vulputate mi. Cras pulvinar mattis nunc sed blandit libero volutpat. In ante metus dictum at tempor commodo. Euismod lacinia at quis risus. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Aliquet eget sit amet tellus cras adipiscing enim eu. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Ut venenatis tellus in metus vulputate eu scelerisque. Vitae purus faucibus ornare suspendisse sed nisi. Ac ut consequat semper viverra nam libero justo. Arcu non odio euismod lacinia at quis risus sed vulputate.'
+] %}
+{% for paragraph in paragraphs %}
+  {% set text %}
+    {% include '@llds/llds-text/text.twig' with {
+      content: paragraph,
+    } only %}
+  {% endset %}
+  {% include '@llds/llds-paragraph/paragraph.twig' with {
+    content: text,
+  } only %}
+{% endfor %}

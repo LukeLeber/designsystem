@@ -1,4 +1,8 @@
 :root {
+  --llds-font-size-normal: 2rem;
+  --llds-font-size-small: 1rem;
+  --llds-font-size-large: 3rem;
+
   --llds-text-weight-normal: 400;
   --llds-text-weight-semibold: 600;
   --llds-text-weight-bold: 700;
@@ -7,13 +11,29 @@
   --llds-text-density-normal: 1.5;
   --llds-text-density-tight: 1.25;
 
+  --llds-font-size-default: var(--llds-font-size-normal);
   --llds-text-weight-default: var(--llds-text-weight-normal);
   --llds-text-density-default: var(--llds-text-density-normal);
 }
 
-.text {
+.llds-text {
+  font-size: var(--llds-font-size-default);
   font-weight: var(--llds-text-weight-normal);
   line-height: var(--llds-text-density-normal);
+
+  &--font-size {
+    &-normal {
+      font-size: var(--llds-font-size-normal);
+    }
+
+    &-small {
+      font-size: var(--llds-font-size-small);
+    }
+
+    &-large {
+      font-size: var(--llds-font-size-large);
+    }
+  }
 
   &--weight {
     &-normal {
