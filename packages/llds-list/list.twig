@@ -1,0 +1,13 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-list',
+  'llds-list--' ~ (ordered ? 'ordered' : 'unordered'),
+  density in ['loose', 'normal', 'tight'] ? 'llds-list--density-' ~ density
+] %}
+
+{% if ordered %}
+  <ol{{ attributes.addClass(classes) }}>{{ content }}</ol>
+{% else %}
+  <ul{{ attributes.addClass(classes) }}>{{ content }}</ul>
+{% endif %}

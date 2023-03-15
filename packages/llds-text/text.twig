@@ -1,9 +1,9 @@
-{% set attributes = attribtes | default(create_attribute([])) %}
+{% set attributes = create_attribute(attributes|default({})) %}
 
-{% set attributes = attributes.addClass([
+{% set classes = [
   'llds-text',
   size in ['small', 'normal', 'large'] ? 'llds-text--font-size-' ~ size,
   weight in ['normal', 'semibold', 'bold'] ? 'llds-text--weight-' ~ weight,
   density in ['loose', 'normal', 'tight'] ? 'llds-text--density-' ~ density
-]) %}
-<span{{ attributes }}>{{ content }}</span>
+] %}
+<span{{ attributes.addClass(classes) }}>{{ content }}</span>

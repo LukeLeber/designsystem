@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-article",
+  "version": "1.0.0",
+  "description": "Provides article component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

@@ -1348,6 +1348,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-article@^1.0.0, @lukeleber/llds-article@workspace:packages/llds-article":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-article@workspace:packages/llds-article"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-image@^1.0.0, @lukeleber/llds-image@workspace:packages/llds-image":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-image@workspace:packages/llds-image"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-list-item@^1.0, @lukeleber/llds-list-item@^1.0.0, @lukeleber/llds-list-item@workspace:packages/llds-list-item":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-list-item@workspace:packages/llds-list-item"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-list@^1.0.0, @lukeleber/llds-list@workspace:packages/llds-list":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-list@workspace:packages/llds-list"
+  dependencies:
+    "@lukeleber/llds-list-item": ^1.0
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-paragraph@^1.0.0, @lukeleber/llds-paragraph@workspace:packages/llds-paragraph":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-paragraph@workspace:packages/llds-paragraph"
@@ -1364,6 +1390,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@lukeleber/patternlab@workspace:packages/patternlab"
   dependencies:
+    "@lukeleber/llds-article": ^1.0.0
+    "@lukeleber/llds-image": ^1.0.0
+    "@lukeleber/llds-list": ^1.0.0
+    "@lukeleber/llds-list-item": ^1.0.0
     "@lukeleber/llds-paragraph": ^1.0.0
     "@lukeleber/llds-text": ^1.0.0
     "@pattern-lab/cli": ^6.0.1

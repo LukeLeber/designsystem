@@ -1,0 +1,7 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-article',
+] %}
+
+<article{{ attributes.addClass(classes) }}>{{ content }}</article>

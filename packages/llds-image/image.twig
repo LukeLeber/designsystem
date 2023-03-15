@@ -1,0 +1,8 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-image',
+  fill ? 'llds-image--fill',
+] %}
+
+<img{{ attributes.addClass(classes) }}>

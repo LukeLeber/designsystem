@@ -1,0 +1,12 @@
+{
+  "name": "@lukeleber/llds-list",
+  "version": "1.0.0",
+  "description": "Provides list component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "dependencies": {
+    "@lukeleber/llds-list-item": "^1.0"
+  }
+}

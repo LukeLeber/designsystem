@@ -1,0 +1,15 @@
+{% set list_items %}
+  {% include '@llds/llds-list-item/list-item.twig' with {
+    content: 'Item 1',
+  } only %}
+  {% include '@llds/llds-list-item/list-item.twig' with {
+    content: 'Item 2',
+  } only %}
+  {% include '@llds/llds-list-item/list-item.twig' with {
+    content: 'Item 3',
+  } only %}
+{% endset %}
+
+{% include '@llds/llds-list/list.twig' with {
+  content: list_items,
+} only %}

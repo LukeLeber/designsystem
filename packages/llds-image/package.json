@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-image",
+  "version": "1.0.0",
+  "description": "Provides image component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
