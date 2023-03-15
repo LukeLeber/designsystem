@@ -12,7 +12,6 @@ class TwigExtension extends Twig_Extension implements Twig_ExtensionInterface {
   public function getFunctions() {
     return [
       new Twig_SimpleFunction('create_attribute', function($attributes) {
-          file_put_contents('/tmp/test.txt', 'running');
         return is_array($attributes) ? new Attribute($attributes) : $attributes;
       }),
       new Twig_SimpleFunction('get_component_stylesheets', function () {
