@@ -1360,6 +1360,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-font@workspace:packages/llds-font":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-font@workspace:packages/llds-font"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-form-element-wrapper@workspace:packages/llds-form-element-wrapper":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-form-element-wrapper@workspace:packages/llds-form-element-wrapper"
