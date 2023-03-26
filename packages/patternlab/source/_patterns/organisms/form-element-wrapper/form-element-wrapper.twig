@@ -1,0 +1,29 @@
+{% set text %}
+  {% include '@llds/llds-text/text.twig' with {
+    content: 'Name'
+  } only %}
+{% endset %}
+
+{% set label %}
+  {% include '@llds/llds-label/label.twig' with {
+    attributes: {
+      for: 'name',
+    },
+    content: text,
+  } only %}
+{% endset %}
+
+{% set element %}
+  {% include '@llds/llds-form-input/input.twig' with {
+    attributes: {
+      name: 'name',
+      type: 'text',
+    }
+  } only %}
+{% endset %}
+
+{% include '@llds/llds-form-element-wrapper/form-element-wrapper.twig' with {
+  label: label,
+  label_display: 'before',
+  element: element,
+} only %}

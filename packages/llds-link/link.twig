@@ -1,0 +1,7 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-link',
+] %}
+
+<a{{ attributes.addClass(classes) }}>{{ content }}</a>

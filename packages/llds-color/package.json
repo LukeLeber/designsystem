@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-color",
+  "version": "1.0.0",
+  "description": "Provides color styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

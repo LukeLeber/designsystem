@@ -1,0 +1,46 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+  {#   'llds-form-element--' ~ name|clean_class, #}
+{% set classes = [
+  'llds-form-element',
+  disabled ? 'llds-form-element--disabled',
+  errors ? 'llds-form-element--error',
+] %}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if label_display in ['before', 'invisible'] %}
+    <span class="llds-form-element__label llds-form-element__label--before">
+      {{ label }}
+    </span>
+  {% endif %}
+  {% if prefix is not empty %}
+    <span class="llds-form-element__prefix">
+      {{ prefix }}
+    </span>
+  {% endif %}
+  {% if description.content is not empty and description_display == 'before' %}
+    <div{{ description.attributes.addClass('llds-form-element__description') }}>
+      {{ description.content }}
+    </div>
+  {% endif %}
+  {{ element }}
+  {% if suffix is not empty %}
+    <span class="llds-form-element__suffix">
+      {{ suffix }}
+    </span>
+  {% endif %}
+  {% if label_display == 'after' %}
+    <span class="llds-form-element__label llds-form-element__label--after">
+      {{ label }}
+    </span>
+  {% endif %}
+  {% if errors %}
+    <div class="llds-form-element__errors">
+      {{ errors }}
+    </div>
+  {% endif %}
+  {% if description_display in ['after', 'invisible'] and description.content %}
+    <div{{ description.attributes.addClass('llds-form-element__description') }}>
+      {{ description.content }}
+    </div>
+  {% endif %}
+</div>

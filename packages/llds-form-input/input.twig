@@ -1,0 +1,10 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-form-input',
+  error ? 'llds-form-input--error',
+  required ? ' llds-form-input--required',
+  size in ['small', 'normal', 'large'] ? 'llds-form-input--' ~ size,
+] %}
+
+<input{{ attributes.addClass(classes) }} />{{ children }}

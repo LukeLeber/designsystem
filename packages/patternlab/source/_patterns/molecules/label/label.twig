@@ -1,0 +1,9 @@
+{% set text %}
+  {% include '@llds/llds-text/text.twig' with {
+    content: 'Lorem ipsum dolor sit amet'
+  } only %}
+{% endset %}
+
+{% include '@llds/llds-label/label.twig' with {
+  content: text,
+} only %}

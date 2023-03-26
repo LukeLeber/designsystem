@@ -1,0 +1,38 @@
+{% set text %}
+  {% include '@llds/llds-text/text.twig' with {
+    content: 'Name'
+  } only %}
+{% endset %}
+
+{% set label %}
+  {% include '@llds/llds-label/label.twig' with {
+    attributes: {
+      for: 'name',
+    },
+    content: text,
+    error: true,
+  } only %}
+{% endset %}
+
+{% set element %}
+  {% include '@llds/llds-form-input/input.twig' with {
+    attributes: {
+      name: 'name',
+      type: 'text',
+    },
+    error: true,
+  } only %}
+{% endset %}
+
+{% set errors %}
+  {% include '@llds/llds-text/text.twig' with {
+    content: 'An error has occurred!',
+  } only %}
+{% endset %}
+
+{% include '@llds/llds-form-element-wrapper/form-element-wrapper.twig' with {
+  label: label,
+  label_display: 'before',
+  element: element,
+  errors: errors,
+} only %}
