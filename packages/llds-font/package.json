@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-font",
+  "version": "1.0.0",
+  "description": "Provides font styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

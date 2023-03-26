@@ -1,0 +1,8 @@
+:root {
+
+  --llds-font-default: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+[class^="llds"] {
+  font-family: var(--llds-font-default);
+}
