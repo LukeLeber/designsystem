@@ -1354,6 +1354,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-branding@workspace:packages/llds-branding":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-branding@workspace:packages/llds-branding"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-color@workspace:packages/llds-color":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-color@workspace:packages/llds-color"
@@ -1375,6 +1381,12 @@ __metadata:
 "@lukeleber/llds-form-input@workspace:packages/llds-form-input":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-form-input@workspace:packages/llds-form-input"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-header@workspace:packages/llds-header":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-header@workspace:packages/llds-header"
   languageName: unknown
   linkType: soft
 

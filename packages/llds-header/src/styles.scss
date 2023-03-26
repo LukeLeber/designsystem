@@ -1,0 +1,19 @@
+:root {
+  --llds-sticky-top-offset: 0;
+  --llds-sticky-bottom-offset: 0;
+  --llds-z-index-header: 50;
+}
+.llds-header {
+  &--sticky {
+    position: sticky;
+    z-index: var(--llds-z-index-header);
+  }
+
+  &--top {
+    top: var(--llds-sticky-top-offset);
+  }
+
+  &--bottom {
+    bottom: var(--llds-z-index-header);
+  }
+}

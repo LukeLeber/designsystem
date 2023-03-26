@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-branding",
+  "version": "1.0.0",
+  "description": "Provides branding block styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

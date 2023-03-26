@@ -1,0 +1,7 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-menu',
+] %}
+
+<nav{{ attributes.addClass(classes) }}>{{ content }}</nav>

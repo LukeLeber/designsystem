@@ -3,7 +3,8 @@
 {% set classes = [
   'llds-list',
   'llds-list--' ~ (ordered ? 'ordered' : 'unordered'),
-  density in ['loose', 'normal', 'tight'] ? 'llds-list--density-' ~ density
+  density in ['loose', 'normal', 'tight'] ? 'llds-list--density-' ~ density,
+  orientation in ['horizontal', 'vertical'] ? 'llds-list--' ~ orientation,
 ] %}
 
 {% if ordered %}

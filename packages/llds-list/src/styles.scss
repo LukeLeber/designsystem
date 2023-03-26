@@ -13,7 +13,7 @@
 
 .llds-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: var(--llds-list-gap-default);
   padding: 0;
   list-style: none outside;
@@ -66,4 +66,13 @@
       }
     }
   }
+
+  &--horizontal {
+    flex-flow: row nowrap;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+
 }

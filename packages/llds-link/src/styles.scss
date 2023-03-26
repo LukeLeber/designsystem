@@ -1,3 +1,18 @@
-.llds-link {
+:root {
+  --llds-link-padding-normal: .5rem;
+  --llds-link-padding-small: .25rem;
+  --llds-link-padding-large: 1rem;
 
+  --llds-link-padding-default: var(--llds-link-padding-normal);
+}
+
+.llds-link {
+  color: var(--llds-color-foreground);
+  padding: var(--llds-link-padding-default);
+  text-decoration: none;
+  text-underline-offset: 0.1em;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

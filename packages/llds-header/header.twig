@@ -1,0 +1,11 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-header',
+  sticky ? 'llds-header--sticky',
+  position in ['top', 'bottom'] ? 'llds-header--' ~ position,
+] %}
+
+<header{{ attributes.addClass(classes) }}>
+  {{ content }}
+</header>

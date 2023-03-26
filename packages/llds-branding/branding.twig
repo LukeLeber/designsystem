@@ -1,0 +1,35 @@
+{% set content %}
+  {% if name %}
+    {% include '@llds/llds-text/text.twig' with {
+      attributes: {
+        class: 'branding__name',
+      },
+      content: name,
+    } only %}
+  {% endif %}
+  {% if logo %}
+    {% include '@llds/llds-image/image.twig' with {
+      attributes: {
+        class: ['branding__logo'],
+        alt: 'Home',
+        src: logo,
+      }
+    } only %}
+  {% endif %}
+  {% if slogan %}
+    {% include '@llds/llds-text/text.twig' with {
+      attributes: {
+        class: 'branding__slogan',
+      },
+      content: slogan,
+      size: 'small',
+    } only %}
+  {% endif %}
+{% endset %}
+{% include '@llds/llds-link/link.twig' with {
+  attributes: {
+    class: 'branding',
+    href: '/',
+  },
+  content: content,
+} only %}
