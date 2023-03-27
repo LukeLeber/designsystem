@@ -1,0 +1,5 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+<footer{{ attributes.addClass('llds-footer') }}>
+  {{ content }}
+</footer>

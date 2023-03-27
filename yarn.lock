@@ -1372,6 +1372,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-footer@workspace:packages/llds-footer":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-footer@workspace:packages/llds-footer"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-form-element-wrapper@workspace:packages/llds-form-element-wrapper":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-form-element-wrapper@workspace:packages/llds-form-element-wrapper"
@@ -1425,6 +1431,12 @@ __metadata:
   resolution: "@lukeleber/llds-list@workspace:packages/llds-list"
   dependencies:
     "@lukeleber/llds-list-item": ^1.0
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-main@workspace:packages/llds-main":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-main@workspace:packages/llds-main"
   languageName: unknown
   linkType: soft
 

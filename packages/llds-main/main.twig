@@ -1,0 +1,5 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+<main{{ attributes.addClass('llds-main') }}>
+  {{ content }}
+</main>
