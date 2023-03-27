@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-aside",
+  "version": "1.0.0",
+  "description": "Provides aside component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

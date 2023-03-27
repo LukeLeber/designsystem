@@ -1354,6 +1354,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-aside@workspace:packages/llds-aside":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-aside@workspace:packages/llds-aside"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-branding@workspace:packages/llds-branding":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-branding@workspace:packages/llds-branding"
