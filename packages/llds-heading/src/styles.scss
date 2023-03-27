@@ -1,0 +1,41 @@
+:root {
+  --llds-heading-xlarge: 3rem;
+  --llds-heading-large: 2.75rem;
+  --llds-heading-medium: 2.5rem;
+  --llds-heading-small: 2.25rem;
+  --llds-heading-xsmall: 2rem;
+  --llds-heading-xxsmall: 1.75rem;
+}
+
+.llds-heading {
+
+  &:where(h1),
+  &--xlarge {
+    font-size: var(--llds-heading-xlarge);
+  }
+
+  &:where(h2),
+  &--large {
+    font-size: var(--llds-heading-large);
+  }
+
+  &:where(h3),
+  &--medium {
+    font-size: var(--llds-heading-medium);
+  }
+
+  &:where(h4),
+  &--small {
+    font-size: var(--llds-heading-small);
+  }
+
+  &:where(h5),
+  &--xsmall {
+    font-size: var(--llds-heading-xsmall);
+  }
+
+  &:where(h6),
+  &--xxsmall {
+    font-size: var(--llds-heading-xxsmall);
+  }
+}

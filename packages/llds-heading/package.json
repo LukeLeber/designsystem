@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-heading",
+  "version": "1.0.0",
+  "description": "Provides heading component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
