@@ -1,9 +1,0 @@
-{
-  "name": "@lukeleber/llds-page",
-  "version": "1.0.0",
-  "description": "Provides page styles",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
-  }
-}
