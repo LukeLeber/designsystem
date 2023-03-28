@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-announcement",
+  "version": "1.0.0",
+  "description": "Provides announcement component styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}

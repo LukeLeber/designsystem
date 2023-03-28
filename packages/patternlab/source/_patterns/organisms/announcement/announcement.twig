@@ -1,0 +1,9 @@
+{% set announcement_content %}
+  {% include '@llds/llds-text/text.twig' with {
+    content: 'This is a demo announcement',
+  } only %}
+{% endset %}
+{% include '@llds/llds-announcement/announcement.twig' with {
+  type: 'info',
+  content: announcement_content,
+} only %}

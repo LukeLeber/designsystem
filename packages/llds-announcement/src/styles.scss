@@ -1,0 +1,17 @@
+.llds-announcement {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  &--info {
+    background: var(--llds-color-accent-10);
+    color: var(--llds-color-foreground);
+  }
+
+  &__sprite {
+    min-width: 2rem;
+    max-width: 4rem;
+  }
+}

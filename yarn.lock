@@ -1348,6 +1348,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-announcement@workspace:packages/llds-announcement":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-announcement@workspace:packages/llds-announcement"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-article@^1.0.0, @lukeleber/llds-article@workspace:packages/llds-article":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-article@workspace:packages/llds-article"
@@ -1464,15 +1470,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lukeleber/llds-page@workspace:packages/llds-page":
-  version: 0.0.0-use.local
-  resolution: "@lukeleber/llds-page@workspace:packages/llds-page"
-  languageName: unknown
-  linkType: soft
-
 "@lukeleber/llds-paragraph@^1.0.0, @lukeleber/llds-paragraph@workspace:packages/llds-paragraph":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-paragraph@workspace:packages/llds-paragraph"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-social-bar@workspace:packages/llds-social-bar":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-social-bar@workspace:packages/llds-social-bar"
   languageName: unknown
   linkType: soft
 
