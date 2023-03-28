@@ -1,0 +1,26 @@
+{% set header %}
+  {% include '@llds/llds-branding/branding.twig' with {
+    logo: 'https://place-hold.it/128x128',
+    name: 'Demo Company',
+    slogan: 'Lorem ipsum dolor sit amet',
+  } only %}
+{% endset %}
+{% set main %}
+  {% set main_content %}
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in fermentum posuere urna nec. Elementum eu facilisis sed odio morbi quis. Arcu dictum varius duis at consectetur lorem. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Ut sem nulla pharetra diam sit amet nisl. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Risus viverra adipiscing at in. Quis vel eros donec ac odio tempor. Sed augue lacus viverra vitae congue eu.</p>
+    <p>Mi ipsum faucibus vitae aliquet nec ullamcorper. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Interdum posuere lorem ipsum dolor. Odio facilisis mauris sit amet massa vitae. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Justo eget magna fermentum iaculis eu non. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Ac turpis egestas sed tempus urna et pharetra pharetra. Viverra nam libero justo laoreet sit amet cursus sit amet. Facilisi morbi tempus iaculis urna. Nunc eget lorem dolor sed viverra ipsum nunc. Facilisis sed odio morbi quis commodo. Id semper risus in hendrerit gravida rutrum. Mauris augue neque gravida in. Sem viverra aliquet eget sit. Neque ornare aenean euismod elementum. Semper eget duis at tellus. Elit at imperdiet dui accumsan sit.</p>
+    <p>Dignissim suspendisse in est ante in nibh mauris. Adipiscing vitae proin sagittis nisl rhoncus mattis rhoncus urna neque. Facilisis volutpat est velit egestas dui id ornare. Nunc pulvinar sapien et ligula ullamcorper malesuada proin libero. Luctus accumsan tortor posuere ac. Eros donec ac odio tempor. Est ante in nibh mauris cursus. Ac odio tempor orci dapibus ultrices in iaculis nunc sed. Cursus risus at ultrices mi tempus. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in.</p>
+    <p>Urna duis convallis convallis tellus id interdum velit laoreet id. Phasellus egestas tellus rutrum tellus pellentesque eu. Nulla posuere sollicitudin aliquam ultrices sagittis orci. Dictum non consectetur a erat nam at lectus urna duis. Lobortis scelerisque fermentum dui faucibus in ornare. Massa tincidunt dui ut ornare. Sit amet cursus sit amet dictum sit amet justo. Non tellus orci ac auctor augue mauris augue neque gravida. Libero justo laoreet sit amet. Mi tempus imperdiet nulla malesuada pellentesque elit eget gravida cum. Nunc non blandit massa enim nec dui nunc. At tellus at urna condimentum mattis pellentesque id. Enim praesent elementum facilisis leo. A cras semper auctor neque vitae tempus quam. Erat nam at lectus urna duis convallis. Eget nunc lobortis mattis aliquam. Tempor nec feugiat nisl pretium. Non blandit massa enim nec.</p>
+    <p>Purus ut faucibus pulvinar elementum. Accumsan sit amet nulla facilisi. Cras fermentum odio eu feugiat pretium nibh ipsum. Eget est lorem ipsum dolor sit amet consectetur. A pellentesque sit amet porttitor. Aliquam purus sit amet luctus venenatis lectus magna fringilla urna. Sit amet facilisis magna etiam tempor orci eu lobortis. Natoque penatibus et magnis dis parturient montes. Augue lacus viverra vitae congue. Facilisis magna etiam tempor orci. Sit amet volutpat consequat mauris nunc. Purus faucibus ornare suspendisse sed nisi lacus sed. Duis at consectetur lorem donec massa sapien faucibus et molestie. Ac felis donec et odio. Ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Hendrerit dolor magna eget est lorem ipsum. Habitasse platea dictumst vestibulum rhoncus est pellentesque elit. Vitae et leo duis ut diam quam nulla porttitor massa.</p>
+  {% endset %}
+  {% include '@llds/llds-layout/layout.twig' with {
+    content: main_content
+  } only %}
+{% endset %}
+{% set aside %}
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec feugiat in fermentum posuere urna nec. Elementum eu facilisis sed odio morbi quis. Arcu dictum varius duis at consectetur lorem. Morbi enim nunc faucibus a pellentesque sit amet porttitor. Ut sem nulla pharetra diam sit amet nisl. Gravida dictum fusce ut placerat orci nulla pellentesque dignissim. Vestibulum morbi blandit cursus risus at ultrices mi tempus. Risus viverra adipiscing at in. Quis vel eros donec ac odio tempor. Sed augue lacus viverra vitae congue eu.</p>
+{% endset %}
+{% set footer %}
+  Footer content
+{% endset %}
+{% include '@llds/llds-page/page.twig' %}

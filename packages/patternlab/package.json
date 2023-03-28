@@ -15,9 +15,13 @@
   "license": "ISC",
   "dependencies": {
     "@lukeleber/llds-article": "^1.0.0",
+    "@lukeleber/llds-aside": "^1.0.0",
+    "@lukeleber/llds-footer": "^1.0.0",
+    "@lukeleber/llds-header": "^1.0.0",
     "@lukeleber/llds-image": "^1.0.0",
     "@lukeleber/llds-list": "^1.0.0",
     "@lukeleber/llds-list-item": "^1.0.0",
+    "@lukeleber/llds-main": "^1.0.0",
     "@lukeleber/llds-paragraph": "^1.0.0",
     "@lukeleber/llds-text": "^1.0.0",
     "@pattern-lab/cli": "^6.0.1",

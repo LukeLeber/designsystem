@@ -1,0 +1,43 @@
+:root {
+  --llds-layout-width-xnarrow: 40rem;
+  --llds-layout-width-narrow: 50rem;
+  --llds-layout-width-normal: 60rem;
+  --llds-layout-width-wide: 70rem;
+  --llds-layout-width-xwide: 80rem;
+
+  --llds-layout-width-default: var(--llds-layout-width-normal);
+}
+
+.llds-layout {
+
+  &__content {
+    margin: auto;
+
+    &--width {
+      &-xnarrow {
+        padding: 0 2rem;
+        max-width: var(--llds-layout-width-xnarrow);
+      }
+
+      &-narrow {
+        padding: 0 2rem;
+        max-width: var(--llds-layout-width-narrow);
+      }
+
+      &-normal {
+        padding: 0 2rem;
+        max-width: var(--llds-layout-width-normal);
+      }
+
+      &-wide {
+        padding: 0 2rem;
+        max-width: var(--llds-layout-width-wide);
+      }
+
+      &-xwide {
+        padding: 0 2rem;
+        max-width: var(--llds-layout-width-xwide);
+      }
+    }
+  }
+}

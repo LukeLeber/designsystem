@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-body",
+  "version": "1.0.0",
+  "description": "Provides body styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
