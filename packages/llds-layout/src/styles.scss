@@ -17,27 +17,27 @@
 
 .llds-layout {
   background: var(--llds-color-background);
-  padding: var(--llds-layout-padding-default) 0;
+  padding: var(--llds-layout-padding-default) 1rem;
 
   &--padding {
     &-xsmall {
-      padding: var(--llds-layout-padding-xsmall) 0;
+      padding: var(--llds-layout-padding-xsmall) 1rem;
     }
 
     &-small {
-      padding: var(--llds-layout-padding-small) 0;
+      padding: var(--llds-layout-padding-small) 1rem;
     }
 
     &-normal {
-      padding: var(--llds-layout-padding-normal) 0;
+      padding: var(--llds-layout-padding-normal) 1rem;
     }
 
     &-large {
-      padding: var(--llds-layout-padding-large) 0;
+      padding: var(--llds-layout-padding-large) 1rem;
     }
 
     &-xlarge {
-      padding: var(--llds-layout-padding-xlarge) 0;
+      padding: var(--llds-layout-padding-xlarge) 1rem;
     }    
   }
 
