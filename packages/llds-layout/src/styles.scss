@@ -5,10 +5,39 @@
   --llds-layout-width-wide: 70rem;
   --llds-layout-width-xwide: 80rem;
 
+  --llds-layout-padding-xsmall: 1rem;
+  --llds-layout-padding-small: 1.5rem;
+  --llds-layout-padding-normal: 2rem;
+  --llds-layout-padding-large: 3rem;
+  --llds-layout-padding-xlarge: 4rem;
+
   --llds-layout-width-default: var(--llds-layout-width-normal);
+  --llds-layout-padding-default: var(--llds-layout-padding-normal);
 }
 
 .llds-layout {
+  background: var(--llds-color-background);
+  padding: var(--llds-layout-padding-default) 0;
+
+  &--padding-xsmall {
+    padding: var(--llds-layout-padding-xsmall) 0;
+  }
+
+  &--padding-small {
+    padding: var(--llds-layout-padding-small) 0;
+  }
+
+  &--padding-normal {
+    padding: var(--llds-layout-padding-normal) 0;
+  }
+
+  &--padding-large {
+    padding: var(--llds-layout-padding-large) 0;
+  }
+
+  &--padding-xlarge {
+    padding: var(--llds-layout-padding-xlarge) 0;
+  }
 
   &__content {
     margin: auto;
