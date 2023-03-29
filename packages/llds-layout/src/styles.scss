@@ -19,24 +19,26 @@
   background: var(--llds-color-background);
   padding: var(--llds-layout-padding-default) 0;
 
-  &--padding-xsmall {
-    padding: var(--llds-layout-padding-xsmall) 0;
-  }
+  &--padding {
+    &-xsmall {
+      padding: var(--llds-layout-padding-xsmall) 0;
+    }
 
-  &--padding-small {
-    padding: var(--llds-layout-padding-small) 0;
-  }
+    &-small {
+      padding: var(--llds-layout-padding-small) 0;
+    }
 
-  &--padding-normal {
-    padding: var(--llds-layout-padding-normal) 0;
-  }
+    &-normal {
+      padding: var(--llds-layout-padding-normal) 0;
+    }
 
-  &--padding-large {
-    padding: var(--llds-layout-padding-large) 0;
-  }
+    &-large {
+      padding: var(--llds-layout-padding-large) 0;
+    }
 
-  &--padding-xlarge {
-    padding: var(--llds-layout-padding-xlarge) 0;
+    &-xlarge {
+      padding: var(--llds-layout-padding-xlarge) 0;
+    }    
   }
 
   &__content {

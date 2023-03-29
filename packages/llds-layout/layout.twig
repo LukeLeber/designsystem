@@ -1,7 +1,8 @@
 {% set attributes = create_attribute(attributes|default({})) %}
 
 {% set classes = [
-  'llds-layout'
+  'llds-layout',
+  padding in ['xsmall', 'small', 'normal', 'large', 'xlarge'] ? 'llds-layout--padding-' ~ padding,
 ] %}
 <div{{ attributes.addClass(classes) }}>
   {% set content_attributes = create_attribute(content_attributes|default({})) %}
