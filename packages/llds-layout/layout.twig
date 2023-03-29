@@ -4,7 +4,12 @@
   'llds-layout'
 ] %}
 <div{{ attributes.addClass(classes) }}>
-  <div class="llds-layout__content">
+  {% set content_attributes = create_attribute(content_attributes|default({})) %}
+  {% set content_classes = [
+    'llds-layout__content',
+    width in ['xnarrow', 'narrow', 'normal', 'wide', 'xwide'] ? 'llds-layout__content--width-' ~ width,
+  ] %}
+  <div{{ content_attributes.addClass(content_classes) }}>
     {{ content }}
   </div>
 </div>
