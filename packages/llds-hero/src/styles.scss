@@ -1,0 +1,41 @@
+.llds-hero {
+  container-type: inline-size;
+  position: relative;
+
+  &__media {
+    display: flex;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 2rem;
+    flex-direction: column;
+
+    @container (min-width: 1024px) {
+      position: absolute;
+      left: 10%;
+      right: 50%;
+      top: 10%;
+      background: #80808080;
+      backdrop-filter: blur(1rem);
+      color: #fff;
+  }
+
+    @container (min-width: 1280px) {
+      top: 25%;
+      right: 60%;
+    }
+  }
+
+  &__heading, &__subheading {
+    margin:0;
+  }
+
+  &__body {
+
+  }
+}

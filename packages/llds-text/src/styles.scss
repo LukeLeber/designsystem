@@ -1,7 +1,9 @@
 :root {
-  --llds-text-font-size-normal: 2rem;
-  --llds-text-font-size-small: 1rem;
-  --llds-text-font-size-large: 3rem;
+  --llds-text-font-size-normal: 1.5rem;
+  --llds-text-font-size-xsmall: 1rem;
+  --llds-text-font-size-small: 1.25rem;
+  --llds-text-font-size-large: 1.75rem;
+  --llds-text-font-size-xlarge: 2rem;
 
   --llds-text-weight-normal: 400;
   --llds-text-weight-semibold: 600;
@@ -26,12 +28,20 @@
       font-size: var(--llds-text-font-size-normal);
     }
 
+    &-xsmall {
+      font-size: var(--llds-text-font-size-xsmall);
+    }
+
     &-small {
       font-size: var(--llds-text-font-size-small);
     }
 
     &-large {
       font-size: var(--llds-text-font-size-large);
+    }
+
+    &-xlarge {
+      font-size: var(--llds-text-font-size-xlarge);
     }
   }
 

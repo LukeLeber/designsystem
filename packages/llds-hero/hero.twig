@@ -1,0 +1,34 @@
+<div class="llds-hero">
+  <div class="llds-hero__media">
+    {{ media }}
+  </div>
+  <div class="llds-hero__content">
+    {% include '@llds/llds-heading/heading.twig' with {
+      attributes: {
+        class: 'llds-hero__heading',
+      },
+      level: 1,
+      content: heading,
+    } only %}
+    {% if subheading %}
+      {% include '@llds/llds-heading/heading.twig' with {
+        attributes: {
+          class: 'llds-hero__subheading',
+        },
+        level: 2,
+        content: subheading,
+      } only %}
+    {% endif %}
+    <div class="llds-hero__body">
+      {{ body }}
+    </div>
+    {% include '@llds/llds-link/link.twig' with {
+      attributes: {
+        class: 'llds-hero__cta',
+        href: cta_link,
+      },
+      content: cta_text,
+      type: 'primary-cta',
+    } only %}
+  </div>
+</div>

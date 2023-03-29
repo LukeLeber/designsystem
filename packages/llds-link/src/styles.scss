@@ -15,4 +15,12 @@
   &:hover {
     text-decoration: underline;
   }
+
+  &--primary-cta {
+    background: var(--llds-color-cta-primary-bg);
+    color: var(--llds-color-cta-primary-fg);
+    display: block;
+    border-radius: .5rem;
+    padding: 1rem;
+  }
 }

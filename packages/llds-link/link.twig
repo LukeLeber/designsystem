@@ -2,6 +2,7 @@
 
 {% set classes = [
   'llds-link',
+  type in ['primary-cta', 'secondary-cta'] ? 'llds-link--' ~ type
 ] %}
 
 <a{{ attributes.addClass(classes) }}>{{ content }}</a>
