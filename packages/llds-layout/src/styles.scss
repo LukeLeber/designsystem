@@ -41,7 +41,9 @@
   }
 
   &__content {
-    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: clamp(2rem, 5%, 4rem);
 
     &--width {
       &-xnarrow {
@@ -68,6 +70,13 @@
         padding: 0 1rem;
         max-width: var(--llds-layout-width-xwide);
       }
+    }
+
+    > .llds-layout__region {
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      min-width: 19rem;
     }
   }
 }
