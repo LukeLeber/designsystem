@@ -1366,6 +1366,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-block@workspace:packages/llds-block":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-block@workspace:packages/llds-block"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-body@workspace:packages/llds-body":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-body@workspace:packages/llds-body"
@@ -1375,6 +1381,12 @@ __metadata:
 "@lukeleber/llds-branding@workspace:packages/llds-branding":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-branding@workspace:packages/llds-branding"
+  languageName: unknown
+  linkType: soft
+
+"@lukeleber/llds-card@workspace:packages/llds-card":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-card@workspace:packages/llds-card"
   languageName: unknown
   linkType: soft
 
