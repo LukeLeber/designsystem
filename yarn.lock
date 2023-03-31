@@ -1384,12 +1384,6 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@lukeleber/llds-card@workspace:packages/llds-card":
-  version: 0.0.0-use.local
-  resolution: "@lukeleber/llds-card@workspace:packages/llds-card"
-  languageName: unknown
-  linkType: soft
-
 "@lukeleber/llds-color@workspace:packages/llds-color":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-color@workspace:packages/llds-color"
