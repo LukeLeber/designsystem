@@ -44,6 +44,7 @@
     display: flex;
     flex-flow: row wrap;
     gap: clamp(2rem, 5%, 4rem);
+    margin: auto;
 
     &--width {
       &-xnarrow {
