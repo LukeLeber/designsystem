@@ -1,0 +1,58 @@
+:root {
+  --llds-form-select-font-size-normal: 1.5rem;
+  --llds-form-select-font-size-small: 1rem;
+  --llds-form-select-font-size-large: 2rem;
+
+  --llds-form-select-padding-normal: 1rem;
+  --llds-form-select-padding-small: .75rem;
+  --llds-form-select-padding-large: 1.25rem;
+
+  --llds-form-select-font-size-default: var(--llds-form-select-font-size-normal);
+  --llds-form-select-padding-default: var(--llds-form-select-padding-normal);
+}
+
+.llds-form-select {
+  box-sizing: border-box;
+  font-size: var(--llds-form-select-font-size-default);
+  padding: var(--llds-form-select-padding-default);
+  box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--llds-color-foreground-10);
+  border: none;
+  outline: .2rem solid var(--llds-color-foreground);
+  outline-offset: -.2rem;
+  transition: box-shadow .2s linear, outline-color .2s linear;
+  width: 100%;
+
+  &:hover, &:focus-visible {
+    outline: .2rem solid var(--llds-color-accent);
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--llds-color-accent-20);
+  }
+
+  &--small {
+    font-size: var(--llds-form-select-font-size-small);
+    padding: var(--llds-form-select-padding-small);
+  }
+
+  &--large {
+    font-size: var(--llds-form-select-font-size-large);
+    padding: var(--llds-form-select-padding-large);
+  }
+
+  &--required {
+
+  }
+
+  &--error {
+    outline-color: var(--llds-color-error);
+    box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--llds-color-error-10);
+
+    &:hover {
+      outline-color: var(--llds-color-error);
+      box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--llds-color-error-30);
+    }
+
+    &:focus-visible {
+      outline: .2rem solid var(--llds-color-accent);
+      box-shadow: 0.2rem 0.2rem 0.3rem 0.1rem var(--llds-color-accent-20);
+    }
+  }
+}

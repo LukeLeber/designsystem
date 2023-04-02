@@ -1414,6 +1414,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-form-select@workspace:packages/llds-form-select":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-form-select@workspace:packages/llds-form-select"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-header@^1.0.0, @lukeleber/llds-header@workspace:packages/llds-header":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-header@workspace:packages/llds-header"

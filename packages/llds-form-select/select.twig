@@ -1,0 +1,14 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-form-select',
+  error ? 'llds-form-select--error',
+  required ? ' llds-form-select--required',
+  size in ['small', 'normal', 'large'] ? 'llds-form-select--' ~ size,
+] %}
+
+{% apply spaceless %}
+<select{{ attributes.addClass(classes) }}>
+  {{ children }}
+</select>
+{% endapply %}

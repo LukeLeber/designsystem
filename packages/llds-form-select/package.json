@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-form-select",
+  "version": "1.0.0",
+  "description": "Provides form select styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
