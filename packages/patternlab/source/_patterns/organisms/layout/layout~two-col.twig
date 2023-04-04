@@ -1,0 +1,26 @@
+{% set content %}
+  {% set heading %}
+    {% include '@llds/llds-heading/heading.twig' with {
+      level: 2,
+      content: 'Sample Intro',
+    } only %}
+  {% endset %}
+  <div class="llds-layout__region llds-layout__region--intro">
+    {% include '@llds/llds-block/block.twig' with {
+      content: heading,
+    } only %}
+  </div>
+  <div class="llds-layout__region llds-layout__region--first">
+    {% include '@llds/llds-block/block.twig' with {
+      content: heading,
+    } only %}
+  </div>
+  <div class="llds-layout__region llds-layout__region--second">
+    {% include '@llds/llds-block/block.twig' with {
+      content: heading,
+    } only %}
+  </div>
+{% endset %}
+{% include '@llds/llds-layout/layout.twig' with {
+  content: content,
+} only %}
