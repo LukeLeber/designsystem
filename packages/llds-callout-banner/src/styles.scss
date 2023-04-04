@@ -1,0 +1,56 @@
+.llds-callout-banner {
+  position: relative;
+  container-type: inline-size;
+
+  &__media {
+    aspect-ratio: 16/7;
+    display: flex;
+  }
+
+  &__callout {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+
+    @container (min-width: 1024px) {
+      background: #80808080;
+      backdrop-filter: blur(1rem);
+      color: #fff;
+      position: absolute;
+      top: 25%;
+    }
+
+    &--left {
+      left: 10%;
+      right: 50%;
+
+      @container (min-width: 1280px) {
+        right: 60%;
+      }
+    }
+
+    &--right {
+      left: 50%;
+      right: 10%;
+
+      @container (min-width: 1280px) {
+        left: 60%;
+      }
+    }
+
+    > .llds-heading,
+    > .llds-paragraph {
+      margin: 0;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+  }
+
+  &__cta {
+    display: inline-block;
+  }
+}

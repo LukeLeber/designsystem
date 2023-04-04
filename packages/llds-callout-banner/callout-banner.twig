@@ -1,0 +1,29 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+<div{{ attributes.addClass('llds-callout-banner') }}>
+  <div class="llds-callout-banner__media">
+    {{ media }}
+  </div>
+  {% set callout_classes = [
+    'llds-callout-banner__callout',
+    alignment in ['left', 'right'] ? 'llds-callout-banner__callout--' ~ alignment,
+  ] %}
+  <div class="{{ callout_classes|join(' ') }}">
+    {% include '@llds/llds-heading/heading.twig' with {
+      attributes: {
+        class: 'llds-callout-banner__heading',
+      },
+      level: heading_level,
+      content: heading,
+    } only %}
+    {{ content }}
+    {% include '@llds/llds-link/link.twig' with {
+      attributes: {
+        class: 'llds-callout-banner__cta',
+        href: cta_link,
+      },
+      content: cta_text,
+      type: 'primary-cta',
+    } only %}
+  </div>
+</div>
