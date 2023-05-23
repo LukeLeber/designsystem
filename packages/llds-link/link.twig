@@ -2,7 +2,9 @@
 
 {% set classes = [
   'llds-link',
-  type in ['primary-cta', 'secondary-cta'] ? 'llds-link--' ~ type
+  type in ['primary-cta', 'secondary-cta'] ? 'llds-link--' ~ type,
+  padding in ['small', 'normal', 'large'] ? 'llds-link--padding-' ~ padding,
+  expand_to_fit ? 'llds-link--expand-to-fit',
 ] %}
 
 <a{{ attributes.addClass(classes) }}>{{ content }}</a>

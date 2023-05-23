@@ -12,6 +12,13 @@
     {{ patternLabHead | raw }}
     <!-- End Pattern Lab -->
     <style>{{ get_component_stylesheets() }}</style>
+    <script>
+      const cms = {
+        bind: (library, cb) => {
+          cb(document);
+        },
+      };
+    </script>
   </head>
   <body class="{{ bodyClass }}">
 

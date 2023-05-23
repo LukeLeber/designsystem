@@ -8,12 +8,31 @@
 
 .llds-link {
   color: var(--llds-color-foreground);
+  display: inline-block;
   padding: var(--llds-link-padding-default);
   text-decoration: none;
   text-underline-offset: 0.1em;
+  outline-offset: -.1rem;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  &--padding-small {
+    padding: var(--llds-link-padding-small);
+
+  }
+
+  &--padding-normal {
+    padding: var(--llds-link-padding-normal);
+  }
+
+  &--padding-large {
+    padding: var(--llds-link-padding-large);
+  }
+
+  &--expand-to-fit {
+    display: block;
   }
 
   &--primary-cta {
