@@ -3,14 +3,17 @@
 
   &--left-aligned {
     margin-right: auto;
+    width: initial;
   }
 
   &--center-aligned {
     margin-left: auto;
     margin-right: auto;
+    width: initial;
   }
 
   &--right-aligned {
     margin-left: auto;
+    width: initial;
   }
 }
