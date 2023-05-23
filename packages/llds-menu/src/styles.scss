@@ -25,12 +25,13 @@
     }
 
     &[aria-expanded] + .llds-menu__list {
+      background: var(--llds-color-background);
       box-shadow: -3px 3px 5px rgba(0,0,0,.2);
       position: absolute;
-      top: 2.6rem;
+      top: 4.7rem;
       right: -1rem;
       background: inherit;
-      min-width: 18rem;
+      min-width: clamp(20rem, 100%, 30rem);
     }
 
     &[aria-expanded="false"] + .llds-menu__list {
@@ -52,7 +53,6 @@
   &__list {
     transition: transform .1s linear,visibility .1s linear;
     width: 100%;
-    max-width: 24rem;
     margin-left: auto;
     text-align: left;
     border-radius: 0.25rem;
