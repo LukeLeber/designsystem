@@ -6,7 +6,6 @@
 
   &__toggle {
     padding: 0;
-    width: 2.6rem;
     background: none;
     border: none;
     cursor: pointer;
@@ -15,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: .4rem .4rem 0 auto;
+    margin: .4rem .4rem .4rem auto;
 
     &:hover, &:focus-visible {
       transform: scale(1.1);
@@ -25,7 +24,7 @@
       background: var(--llds-color-background);
       box-shadow: -3px 3px 5px rgba(0,0,0,.2);
       position: absolute;
-      top: 2.4rem;
+      top: 2.8125rem;
       right: -1rem;
       min-width: clamp(20rem, 100%, 30rem);
     }
@@ -44,6 +43,61 @@
   &__toggle-label {
     opacity: 0;
     position: absolute;
+  }
+
+  &__toggle[aria-expanded="true"] .llds-menu__toggle-bars > div {
+    &:nth-child(1) {
+      top: 1.125rem;
+      width: 0;
+      left: 50%;
+    }
+
+    &:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &:nth-child(3) {
+      transform: rotate(-45deg);
+    }
+
+    &:nth-child(4) {
+      top: 1.125rem;
+      width: 0;
+      left: 50%;
+    }
+  }
+
+  &__toggle-bars {
+    width: 2.8125rem;
+    height: 2.8125rem;
+    position: relative;
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+
+    & > div {
+      position: absolute;
+      height: .5625rem;
+      width: 100%;
+      background: #000;
+      border-radius: .5625rem;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: .25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2), &:nth-child(3) {
+        top: 1.125rem;
+      }
+
+      &:nth-child(4) {
+        top: 2.25rem;
+      }
+    }
   }
 
   &__list {
