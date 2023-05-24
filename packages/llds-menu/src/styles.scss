@@ -25,7 +25,7 @@
       box-shadow: -3px 3px 5px rgba(0,0,0,.2);
       position: absolute;
       top: 2.8125rem;
-      right: -1rem;
+      right: .2rem;
       min-width: clamp(20rem, 100%, 30rem);
     }
 
@@ -47,7 +47,7 @@
 
   &__toggle[aria-expanded="true"] .llds-menu__toggle-bars > div {
     &:nth-child(1) {
-      top: 1.125rem;
+      top: .8rem;
       width: 0;
       left: 50%;
     }
@@ -61,15 +61,15 @@
     }
 
     &:nth-child(4) {
-      top: 1.125rem;
+      top: .8rem;
       width: 0;
       left: 50%;
     }
   }
 
   &__toggle-bars {
-    width: 2.8125rem;
-    height: 2.8125rem;
+    width: 2rem;
+    height: 2rem;
     position: relative;
     transform: rotate(0deg);
     transition: .5s ease-in-out;
@@ -77,10 +77,10 @@
 
     & > div {
       position: absolute;
-      height: .5625rem;
+      height: .4rem;
       width: 100%;
       background: #000;
-      border-radius: .5625rem;
+      border-radius: .4rem;
       opacity: 1;
       left: 0;
       transform: rotate(0deg);
@@ -91,11 +91,11 @@
       }
 
       &:nth-child(2), &:nth-child(3) {
-        top: 1.125rem;
+        top: .8rem;
       }
 
       &:nth-child(4) {
-        top: 2.25rem;
+        top: 1.6rem;
       }
     }
   }
