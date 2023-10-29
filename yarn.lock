@@ -1444,6 +1444,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@lukeleber/llds-html@workspace:packages/llds-html":
+  version: 0.0.0-use.local
+  resolution: "@lukeleber/llds-html@workspace:packages/llds-html"
+  languageName: unknown
+  linkType: soft
+
 "@lukeleber/llds-image@^1.0.0, @lukeleber/llds-image@workspace:packages/llds-image":
   version: 0.0.0-use.local
   resolution: "@lukeleber/llds-image@workspace:packages/llds-image"
