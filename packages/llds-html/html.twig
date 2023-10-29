@@ -1,0 +1,9 @@
+{% set attributes = create_attribute(attributes|default({})) %}
+
+{% set classes = [
+  'llds-html',
+] %}
+
+<html{{ attributes.addClass(classes) }}>
+  {{ content }}
+</html>

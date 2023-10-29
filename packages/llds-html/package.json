@@ -1,0 +1,9 @@
+{
+  "name": "@lukeleber/llds-html",
+  "version": "1.0.0",
+  "description": "Provides html styles",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
+  }
+}
